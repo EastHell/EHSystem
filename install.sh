@@ -5,7 +5,7 @@ SYSTEM_LOCAL_PATH="${HOME}/.system"
 
 if [ -d ${SYSTEM_LOCAL_PATH} ]
 then
-  echo "${SYSTERM_LOCAL_PATH} already exist."
+  echo "${SYSTEM_LOCAL_PATH} already exist."
   exit
 fi
 
