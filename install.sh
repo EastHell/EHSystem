@@ -15,6 +15,6 @@ if [[ ":${PATH}:" != *":${SYSTEM_LOCAL_PATH}:"* ]]
 then
   echo "${SYSTEM_LOCAL_PATH} already exist in $PATH variable"
 else
-  echo "export PATH=${PATH}:${SYSTEM_LOCAL_PATH}" >> ${HOME}/.zshrc
+  echo -n $"export PATH=${PATH}:${SYSTEM_LOCAL_PATH}" >> ${HOME}/.zshrc
   export PATH=${PATH}:${SYSTEM_LOCAL_PATH}
 fi
