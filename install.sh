@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SYSTEM_REMOTE_URL="https://github.com/EastHell/System.git"
-SYSTEM_LOCAL_PATH="${HOME}/.system"
+SYSTEM_LOCAL_PATH="${HOME}/.EHSystem"
 
 if [ -d ${SYSTEM_LOCAL_PATH} ]
 then
