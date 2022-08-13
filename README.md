@@ -4,5 +4,5 @@ This is a system configuration repository.
 
 To configure new clean system run this command
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/EastHell/EHSystem/master/install.sh)"
+source <(curl -s https://raw.githubusercontent.com/EastHell/EHSystem/master/install.sh)
 ```
