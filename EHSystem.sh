@@ -1,0 +1,34 @@
+#!/bin/bash
+
+readonly SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")"
+
+POSITIONAL_ARGS=()
+
+while [[ $# -gt 0 ]];
+do
+  case $1 in
+    -h|--help)
+      echo "Help:
+update - updates EHSystem
+
+Options:
+-h shows this message"
+      exit 1
+      ;;
+    -*|--*)
+      echo "Unknown option $1"
+      exit 1
+      ;;
+    *) POSITIONAL_ARGS+=("$1") # save positional arg
+      shift # past argunent
+      ;;
+  esac
+done
+
+set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
+
+if [ $1 == "update" ];
+then
+  echo "Update command launched"
+  git -C ${SCRIPT_DIR} pull
+fi
