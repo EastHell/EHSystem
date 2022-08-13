@@ -13,7 +13,7 @@ git clone "$SYSTEM_REMOTE_URL" "$SYSTEM_LOCAL_PATH"
 
 if [[ ":${PATH}:" != *":${SYSTEM_LOCAL_PATH}:"* ]]
 then
-  echo -n $"export PATH=\"\$PATH:\$HOME/.EHSystem\"" >> ${HOME}/.zshrc
+  echo $"export PATH=\$PATH:~/.EHSystem" >> ${HOME}/.zshrc
   source $SYSTEM_LOCAL_PATH/.EHSEnviroment
 else
   echo "${SYSTEM_LOCAL_PATH} already exist in $PATH variable"
