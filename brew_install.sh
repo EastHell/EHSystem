@@ -9,6 +9,6 @@ then
   eval "\$(opt/homebrew/bin/brew shellenv)"
 else
   echo "Homebrew already installed"
-  exit 1
+  return 1
 fi
 
