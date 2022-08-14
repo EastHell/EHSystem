@@ -32,5 +32,5 @@ then
   echo "Update command launched"
   git -C ${SCRIPT_DIR} pull
 
-  source SCRIPT_DIR/brew_install.sh
+  source ${SCRIPT_DIR}/brew_install.sh
 fi

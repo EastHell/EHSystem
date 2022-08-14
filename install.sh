@@ -23,4 +23,4 @@ else
 fi
 
 # Install brew
-source SYSTEM_LOCAL_PATH/brew_install.sh
+source ${SYSTEM_LOCAL_PATH}/brew_install.sh
