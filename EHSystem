@@ -4,6 +4,7 @@ readonly SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")"
 
 POSITIONAL_ARGS=()
 
+# Read commands and options
 while [[ $# -gt 0 ]];
 do
   case $1 in
@@ -25,12 +26,17 @@ Options:
   esac
 done
 
+# Fix options
 set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
 
+# Check "update" option
 if [ $1 == "update" ];
 then
   echo "Update command launched"
   git -C ${SCRIPT_DIR} pull
-
+  
+  # Install brew
   source ${SCRIPT_DIR}/brew_install.sh
+  # Install Oh-my-zsh
+  source ${SCRIPT_DIR}/omz_install.sh
 fi

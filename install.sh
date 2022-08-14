@@ -22,5 +22,5 @@ else
   echo "${SYSTEM_LOCAL_PATH} already exist in $PATH variable"
 fi
 
-# Install brew
-source ${SYSTEM_LOCAL_PATH}/brew_install.sh
+# Run update command
+source ${SYSTEM_LOCAL_PATH}/EHSystem update
