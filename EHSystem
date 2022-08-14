@@ -1,5 +1,20 @@
 #!/bin/bash
 
+# Description:
+#   This script is main scipt to manage EHSystem
+#
+# Arguments:
+#   $1 - command to run
+#
+# Possible values:
+#   update - pulls the current repository branch, and start updates scipts
+# 
+# Flags:
+#   -h - show help message
+#
+# Example of usage:
+#   EHSystem update
+
 readonly SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")"
 
 POSITIONAL_ARGS=()
@@ -26,17 +41,13 @@ Options:
   esac
 done
 
-# Fix options
-set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
+# Restore positional parameters
+set -- "${POSITIONAL_ARGS[@]}"
 
-# Check "update" option
+# Handle update command
 if [ $1 == "update" ];
 then
   echo "Update command launched"
   git -C ${SCRIPT_DIR} pull
-  
-  # Install brew
-  source ${SCRIPT_DIR}/brew_install.sh
-  # Install Oh-my-zsh
-  source ${SCRIPT_DIR}/omz_install.sh
+  source ${SCRIPT_DIR}/update.sh
 fi
