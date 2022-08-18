@@ -1,9 +1,10 @@
 # taps
-tap "romkatv/powerlevel10k/powerlevel10k"
+# tap "romkatv/powerlevel10k/powerlevel10k"
 
 # brew
 brew "mas"
 brew "neovim"
+brew "romkatv/powerlevel10k/powerlevel10k"
 
 # casks
 cask "telegram"
