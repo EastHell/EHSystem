@@ -5,6 +5,7 @@ tap "romkatv/powerlevel10k"
 brew "mas"
 brew "neovim"
 brew "romkatv/powerlevel10k/powerlevel10k"
+brew "zsh-completions"
 
 # casks
 cask "telegram"
