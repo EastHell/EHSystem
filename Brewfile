@@ -10,12 +10,12 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "gh"
 brew "aria2"
-brew "robotsandpencils/made/xcodes"
 
 # casks
 cask "telegram"
 cask "iterm2"
 cask "raycast"
 cask "fig"
+cask "xcodes"
 
 # mas - Mac appstore cli
