@@ -16,7 +16,3 @@ else
   echo "Installing Oh my zsh"
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
-
-# Replace .zshrc with new one
-rm ~/.zshrc
-cp ~/.EHSystem/.zshrc ~/.zshrc

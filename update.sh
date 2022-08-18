@@ -10,3 +10,7 @@
 source ${SCRIPT_DIR}/omz_install.sh
 # Install brew
 source ${SCRIPT_DIR}/brew_install.sh
+
+# Replace .zshrc with new one
+rm ~/.zshrc
+cp ~/.EHSystem/.zshrc ~/.zshrc
