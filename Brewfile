@@ -8,6 +8,9 @@ brew "romkatv/powerlevel10k/powerlevel10k"
 brew "zsh-completions"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "gh"
+brew "aria2"
+brew "robotsandpencils/made/xcodes"
 
 # casks
 cask "telegram"

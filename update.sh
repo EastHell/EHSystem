@@ -19,5 +19,9 @@ cp ~/.EHSystem/.p10k.zsh ~/.p10k.zsh
 rm ~/.zshrc
 cp ~/.EHSystem/.zshrc ~/.zshrc
 
+# xcodes
+mkdir ~/.oh-my-zsh/completions
+xcodes --generate-completion-script > ~/.oh-my-zsh/completions/_xcodes
+
 # reload zsh
 exec zsh
