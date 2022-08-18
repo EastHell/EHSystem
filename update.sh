@@ -16,4 +16,4 @@ rm ~/.zshrc
 cp ~/.EHSystem/.zshrc ~/.zshrc
 
 # reload omz
-omz reload
+eval "omz reload"
