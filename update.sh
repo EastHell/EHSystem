@@ -14,3 +14,6 @@ source ${SCRIPT_DIR}/brew_install.sh
 # Replace .zshrc with new one
 rm ~/.zshrc
 cp ~/.EHSystem/.zshrc ~/.zshrc
+
+# reload omz
+omz reload
