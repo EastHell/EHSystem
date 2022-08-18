@@ -1,5 +1,5 @@
 # taps
-# tap "romkatv/powerlevel10k/powerlevel10k"
+tap "romkatv/powerlevel10k"
 
 # brew
 brew "mas"
