@@ -11,5 +11,5 @@ source <(curl -s https://raw.githubusercontent.com/EastHell/EHSystem/master/inst
 
 To install updates and new applications and dependencies simply run
 ```bash
-EHSystem update
+ehs update
 ```
