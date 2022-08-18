@@ -15,5 +15,5 @@ source ${SCRIPT_DIR}/brew_install.sh
 rm ~/.zshrc
 cp ~/.EHSystem/.zshrc ~/.zshrc
 
-# reload omz
-eval "omz reload"
+# reload zsh
+exec zsh
