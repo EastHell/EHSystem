@@ -6,6 +6,7 @@ brew "mas"
 brew "neovim"
 brew "romkatv/powerlevel10k/powerlevel10k"
 brew "zsh-completions"
+brew "zsh-autosuggestions"
 
 # casks
 cask "telegram"
