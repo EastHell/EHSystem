@@ -7,6 +7,7 @@ brew "neovim"
 brew "romkatv/powerlevel10k/powerlevel10k"
 brew "zsh-completions"
 brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
 
 # casks
 cask "telegram"
