@@ -26,7 +26,7 @@ then
 fi
 
 # fzf
-if [ ! -f ~/fzf.zsh ]
+if [ ! -f ~/.fzf.zsh ]
 then
 $(brew --prefix)/opt/fzf/install
 fi
