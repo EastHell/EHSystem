@@ -11,6 +11,7 @@ brew "zsh-syntax-highlighting"
 brew "gh"
 brew "aria2"
 brew "nnn"
+brew "fzf"
 
 # casks
 cask "telegram"

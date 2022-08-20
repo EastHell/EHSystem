@@ -143,7 +143,7 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # nnn
 # Configure nnn to use editor from $EDITOR variable
 export NNN_USE_EDITOR=1
-export NNN_PLUG='f:fzopen;v:imgview;g:getplugs;c:diffs;d:dragdrop;'
+export NNN_PLUG='f:fzopen;v:imgview;g:getplugs;c:diffs;'
 
 # CD on quit
 n ()

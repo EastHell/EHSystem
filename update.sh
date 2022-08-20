@@ -25,5 +25,8 @@ then
   curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
 fi
 
+# fzf
+$(brew --prefix)/opt/fzf/install
+
 # reload zsh
 exec zsh
