@@ -26,7 +26,10 @@ then
 fi
 
 # fzf
+if [ ! -f ~/fzf.zsh ]
+then
 $(brew --prefix)/opt/fzf/install
+fi
 
 # reload zsh
 exec zsh
