@@ -20,7 +20,7 @@ rm ~/.zshrc
 cp ~/.EHSystem/.zshrc ~/.zshrc
 
 # nnn plugins
-if ![ -d ${XDG_CONFIG_HOME:-$HOME/.config}/nnn/plugins ]
+if [ ! -d ${XDG_CONFIG_HOME:-$HOME/.config}/nnn/plugins ]
 then
   curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
 fi
