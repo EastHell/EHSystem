@@ -19,7 +19,7 @@ cask "iterm2"
 cask "raycast"
 cask "fig"
 cask "xcodes"
-cask "swiftcord"
+cask "discord"
 cask "steam"
 
 # mas - Mac appstore cli
