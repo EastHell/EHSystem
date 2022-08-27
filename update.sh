@@ -41,3 +41,5 @@ cp -R ~/.EHSystem/.config/nvim ~/.config/nvim
 
 # reload zsh
 exec zsh
+
+exit 0
