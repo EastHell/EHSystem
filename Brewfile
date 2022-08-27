@@ -21,5 +21,6 @@ cask "fig"
 cask "xcodes"
 cask "discord"
 cask "steam"
+cask "easyeda"
 
 # mas - Mac appstore cli
