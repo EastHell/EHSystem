@@ -13,8 +13,21 @@ vim.cmd([[
 ]])
 
 return require('packer').startup(function(use)
-  -- My plugins here
+  -- Manage packer by himself
     use 'wbthomason/packer.nvim'
+
+    use {
+      'xbase-lab/xbase',
+        run = 'make install', -- make free_space (not recommended, longer build time)
+        requires = {
+          "nvim-lua/plenary.nvim",
+          "nvim-telescope/telescope.nvim",
+          "neovim/nvim-lspconfig"
+        },
+        config = function()
+          require'xbase'.setup({})  -- see default configuration bellow
+        end
+    }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
