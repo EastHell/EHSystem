@@ -1,7 +1,11 @@
+#
 # taps
+#
 tap "romkatv/powerlevel10k"
 
+#
 # brew
+#
 brew "mas"
 brew "neovim"
 brew "romkatv/powerlevel10k/powerlevel10k"
@@ -12,8 +16,12 @@ brew "gh"
 brew "aria2"
 brew "nnn"
 brew "fzf"
+# for nvim coc plugin
+brew "node"
 
+#
 # casks
+#
 cask "telegram"
 cask "iterm2"
 cask "raycast"
@@ -23,4 +31,6 @@ cask "discord"
 cask "steam"
 cask "easyeda"
 
+#
 # mas - Mac appstore cli
+#
