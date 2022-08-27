@@ -8,18 +8,22 @@ vim.opt.expandtab = true -- use spaces instead of tab
 vim.opt.smarttab = true -- indent/dedent in leading whitespaces
 
 -- [[ packer ]] --
-local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
-
-if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
-  print('Installing Packer')
-  vim.cmd(':!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
+local fn = vim.fn
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+if fn.empty(fn.glob(install_path)) > 0 then
+  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+  vim.cmd [[packadd packer.nvim]]
 end
 
--- [[ starts packer ]] --
-vim.cmd [[ packadd packer.nvim ]]
-
 -- [[ packages ]] --
-require('packer').startup(function(use)
+return require('packer').startup(function(use)
+  -- My plugins here
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
+
+  -- Automatically set up your configuration after cloning packer.nvim
+  -- Put this at the end after all plugins
+  if packer_bootstrap then
+    require('packer').sync()
+  end
 end)
