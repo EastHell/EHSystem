@@ -37,7 +37,7 @@ then
     mkdir -p ~/.config/nvim
 fi
 
-cp -R ~/.EHSystem/.config/nvim ~/.config/nvim
+cp -R ~/.EHSystem/.config/nvim ~/.config
 
 # reload zsh
 exec zsh

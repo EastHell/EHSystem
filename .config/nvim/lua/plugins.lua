@@ -5,6 +5,8 @@ if fn.empty(fn.glob(install_path)) > 0 then
   vim.cmd [[packadd packer.nvim]]
 end
 
+print('packer loaded')
+
 return require('packer').startup(function(use)
   -- My plugins here
     -- Packer can manage itself
