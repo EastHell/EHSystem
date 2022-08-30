@@ -10,6 +10,7 @@ vim.opt.smarttab = true -- indent/dedent in leading whitespaces
 require('plugins')
 
 --[[ feline ]]--
+vim.opt.termguicolors = true
 require('feline').setup()
 require('feline').winbar.setup()
 
