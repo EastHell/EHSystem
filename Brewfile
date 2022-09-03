@@ -18,7 +18,6 @@ brew "nnn"
 brew "fzf"
 # for nvim coc plugin
 brew "node"
-brew "obsidian"
 
 #
 # casks
@@ -31,6 +30,7 @@ cask "xcodes"
 cask "discord"
 cask "steam"
 cask "easyeda"
+cask "obsidian"
 
 #
 # mas - Mac appstore cli
