@@ -40,4 +40,5 @@ fi
 cp -R ~/.EHSystem/.config/nvim ~/.config
 
 # reload zsh
+chsh -s /bin/zsh
 source ~/.zshrc
