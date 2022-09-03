@@ -41,3 +41,4 @@ cp -R ~/.EHSystem/.config/nvim ~/.config
 
 # reload zsh
 #exec zsh
+source ~/.zshrc
