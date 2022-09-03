@@ -31,6 +31,7 @@ cask "discord"
 cask "steam"
 cask "easyeda"
 cask "obsidian"
+cask "rar"
 
 #
 # mas - Mac appstore cli
