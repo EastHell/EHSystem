@@ -40,5 +40,5 @@ fi
 cp -R ~/.EHSystem/.config/nvim ~/.config
 
 # reload zsh
-/bin/zsh -i -c omz reload
+/bin/zsh -ic "omz reload"
 #exit 0
