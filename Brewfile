@@ -18,6 +18,7 @@ brew "nnn"
 brew "fzf"
 # for nvim coc plugin
 brew "node"
+brew "xcodegen"
 
 #
 # casks
