@@ -32,6 +32,7 @@ cask "discord"
 cask "easyeda"
 cask "obsidian"
 cask "rar"
+cask "arduino-ide"
 
 #
 # mas - Mac appstore cli
