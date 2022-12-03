@@ -33,6 +33,7 @@ cask "easyeda"
 cask "obsidian"
 cask "rar"
 cask "arduino-ide"
+cask "sf-symbols"
 
 #
 # mas - Mac appstore cli
