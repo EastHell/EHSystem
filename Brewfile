@@ -34,6 +34,7 @@ cask "obsidian"
 cask "rar"
 cask "arduino-ide"
 cask "sf-symbols"
+cask "notion"
 
 #
 # mas - Mac appstore cli
